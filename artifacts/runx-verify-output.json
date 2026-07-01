@@ -1,7 +1,15 @@
 {
-  "status": "failure",
-  "error": {
-    "message": "runx verify requires trusted receipt verification keys. Set both RUNX_RECEIPT_VERIFY_KID and RUNX_RECEIPT_VERIFY_ED25519_PUBLIC_KEY_BASE64, or pass --allow-local-development-signatures for local fixture receipts only.",
-    "code": "runtime_error"
-  }
+  "receipt_dir": "/home/runner/work/frantic-bounty-43-board-health-audit-8064a151/frantic-bounty-43-board-health-audit-8064a151/receipts",
+  "signature_mode": "production",
+  "trees": [
+    {
+      "root_receipt_id": "sha256:304f3a9f5c83d8afcb62ce0f9e6f53a3ede5f7881d1b45adbe546d421ff8b32a",
+      "receipt_count": 1,
+      "parent_missing": null,
+      "valid": true,
+      "findings": []
+    }
+  ],
+  "unreadable_files": [],
+  "valid": true
 }

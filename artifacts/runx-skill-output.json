@@ -1,6 +1,6 @@
 {
   "closure": {
-    "closed_at": "2026-07-01T07:04:38.620Z",
+    "closed_at": "2026-07-01T07:09:16.950Z",
     "disposition": "failed",
     "reason_code": "process_failed",
     "summary": "cli-tool default completed"
@@ -18,7 +18,7 @@
       {
         "artifact_refs": [],
         "closure": {
-          "closed_at": "2026-07-01T07:04:38.620Z",
+          "closed_at": "2026-07-01T07:09:16.950Z",
           "disposition": "failed",
           "reason_code": "process_exit",
           "summary": "terminate called after throwing an instance of 'St9bad_alloc'\n  what():  std::bad_alloc\n"
@@ -73,7 +73,7 @@
       "terms": []
     },
     "canonicalization": "runx.receipt.c14n.v1",
-    "created_at": "2026-07-01T07:04:38.620Z",
+    "created_at": "2026-07-01T07:09:16.950Z",
     "decisions": [
       {
         "artifact_refs": [],
@@ -101,8 +101,8 @@
         "selected_harness_ref": null
       }
     ],
-    "digest": "sha256:5ae2a2bb1906213006c41bf0f9bb8493ba801ac805e2c77dabd5a336b2461d02",
-    "id": "sha256:9cccf31acfb7bb9729a351002537529c0590a158432b580b36403469d97884db",
+    "digest": "sha256:ac0f68ee660ac544da17be6b8fc20ef7d1f75fec1f32670ac3db2df73281c25b",
+    "id": "sha256:304f3a9f5c83d8afcb62ce0f9e6f53a3ede5f7881d1b45adbe546d421ff8b32a",
     "idempotency": {
       "content_hash": "sha256:run_default_a5c0b102f73c-default-content",
       "intent_key": "sha256:run_default_a5c0b102f73c-default-intent",
@@ -119,7 +119,7 @@
     },
     "schema": "runx.receipt.v1",
     "seal": {
-      "closed_at": "2026-07-01T07:04:38.620Z",
+      "closed_at": "2026-07-01T07:09:16.950Z",
       "criteria": [
         {
           "criterion_id": "process_exit",
@@ -130,14 +130,14 @@
         }
       ],
       "disposition": "failed",
-      "last_observed_at": "2026-07-01T07:04:38.620Z",
+      "last_observed_at": "2026-07-01T07:09:16.950Z",
       "reason_code": "process_failed",
       "summary": "cli-tool default completed"
     },
     "signals": [],
     "signature": {
       "alg": "Ed25519",
-      "value": "base64:QB2DVMfsOrWR4u9o_6N96s3exitrnStkFrD5SEcIK0iyK7l9qI341V_lIookzgHPgL0rLigzElRW-oaLNmruDQ"
+      "value": "base64:PNOShsSM4HXghqTWgvFITU53rw9a96c79z0ocXmwe2VFOCtiAuhaT3VJY-gQhMvgUGbxq_h7TACNDZc-Y5vwBw"
     },
     "subject": {
       "commitments": [],
@@ -148,7 +148,7 @@
       }
     }
   },
-  "receipt_id": "sha256:9cccf31acfb7bb9729a351002537529c0590a158432b580b36403469d97884db",
+  "receipt_id": "sha256:304f3a9f5c83d8afcb62ce0f9e6f53a3ede5f7881d1b45adbe546d421ff8b32a",
   "run_id": "run_default_a5c0b102f73c",
   "schema": "runx.skill_run.v1",
   "skill_name": "frantic-board-health-audit",
