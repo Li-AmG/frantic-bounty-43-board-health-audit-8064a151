@@ -1,0 +1,57 @@
+skill: frantic-board-health-audit
+version: "0.1.0"
+
+catalog:
+  kind: skill
+  audience: operator
+  visibility: public
+  role: canonical
+
+harness:
+  cases:
+    - name: claim-43-board-health-smoke
+      runner: default
+      inputs:
+        capture_dir: ../captures
+        output_dir: ../published
+        claim_id: 8064a151-e87d-46b2-b0ad-3b9160fe4bd1
+      expect:
+        status: sealed
+        receipt:
+          schema: runx.receipt.v1
+          state: sealed
+          disposition: closed
+          reason_code: process_closed
+
+runners:
+  default:
+    default: true
+    type: cli-tool
+    command: pwsh
+    args:
+      - -NoProfile
+      - -ExecutionPolicy
+      - Bypass
+      - -File
+      - run.ps1
+    timeout_seconds: 60
+    sandbox:
+      profile: readonly
+      cwd_policy: skill-directory
+      require_enforcement: false
+    inputs:
+      capture_dir:
+        type: string
+        required: true
+      output_dir:
+        type: string
+        required: true
+      claim_id:
+        type: string
+        required: true
+    outputs:
+      verdict: string
+      report_path: string
+      evidence_path: string
+      observations_count: number
+      questionable_count: number

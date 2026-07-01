@@ -1,0 +1,60 @@
+name: runx-audit-receipt
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'captures/**'
+      - 'audit-skill/**'
+      - 'artifacts/**'
+      - '.github/workflows/runx-audit-receipt.yml'
+
+permissions:
+  contents: write
+
+env:
+  RUNX_RECEIPT_SIGN_KID: runx-demo-key
+  RUNX_RECEIPT_SIGN_ED25519_SEED_BASE64: QkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkI=
+  RUNX_RECEIPT_SIGN_ISSUER_TYPE: hosted
+  RUNX_SANDBOX_ALLOW_DECLARED_POLICY_ONLY: local
+
+jobs:
+  seal-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install runx
+        run: npm install -g @runxhq/cli@0.6.14
+      - name: Capture runx version
+        run: |
+          runx --version | tee runx-version.txt
+          echo "RUNX_AUDIT_RUNX_VERSION=$(cat runx-version.txt)" >> "$GITHUB_ENV"
+      - name: Seal audit run
+        run: |
+          rm -rf receipts
+          mkdir -p receipts
+          export RUNX_RECEIPT_DIR="$PWD/receipts"
+          runx skill ./audit-skill \
+            -i capture_dir=../captures \
+            -i output_dir=../artifacts \
+            -i claim_id=8064a151-e87d-46b2-b0ad-3b9160fe4bd1 \
+            --json --non-interactive | tee artifacts/runx-skill-output.json
+      - name: Verify receipt
+        run: |
+          export RUNX_RECEIPT_DIR="$PWD/receipts"
+          RECEIPT_ID=$(find receipts -maxdepth 1 -name 'sha256:*.json' -printf '%f\n' | sed 's/\.json$//' | head -n 1)
+          test -n "$RECEIPT_ID"
+          echo "$RECEIPT_ID" | tee artifacts/receipt_ref.txt
+          runx verify "$RECEIPT_ID" --receipt-dir receipts --json | tee artifacts/runx-verify-output.json
+      - name: Commit generated receipt artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add artifacts receipts runx-version.txt
+          git diff --cached --quiet || git commit -m "Seal bounty 43 board health audit receipt"
+          git push

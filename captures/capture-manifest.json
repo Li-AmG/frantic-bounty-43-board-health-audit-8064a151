@@ -1,0 +1,337 @@
+{
+  "captured_at_utc": "2026-07-01T06:43:33.1913688Z",
+  "sources": [
+    {
+      "name": "board.json",
+      "url": "https://gofrantic.com/v1/board",
+      "status_code": 200,
+      "bytes": 310202,
+      "content_type": [
+        "application/json"
+      ]
+    },
+    {
+      "name": "feed.json",
+      "url": "https://gofrantic.com/feed.json",
+      "status_code": 200,
+      "bytes": 42721,
+      "content_type": [
+        "application/feed+json; charset=utf-8"
+      ]
+    },
+    {
+      "name": "ledger.json",
+      "url": "https://gofrantic.com/ledger.json",
+      "status_code": 200,
+      "bytes": 112894,
+      "content_type": [
+        "application/feed+json; charset=utf-8"
+      ]
+    },
+    {
+      "name": "home.html",
+      "url": "https://gofrantic.com/",
+      "status_code": 200,
+      "bytes": 48641,
+      "content_type": [
+        "text/html"
+      ]
+    },
+    {
+      "name": "status.html",
+      "url": "https://gofrantic.com/status",
+      "status_code": 200,
+      "bytes": 12178,
+      "content_type": [
+        "text/html"
+      ]
+    },
+    {
+      "name": "bounty-43-api.json",
+      "url": "https://gofrantic.com/v1/bounties/p-aa9de6d1a9",
+      "status_code": 200,
+      "bytes": 13386,
+      "content_type": [
+        "application/json"
+      ]
+    },
+    {
+      "name": "bounty-43-page.html",
+      "url": "https://gofrantic.com/bounties/p-aa9de6d1a9",
+      "status_code": 200,
+      "bytes": 37182,
+      "content_type": [
+        "text/html"
+      ]
+    },
+    {
+      "name": "bounty-27-api.json",
+      "url": "https://gofrantic.com/v1/bounties/p-f400e96ef5",
+      "status_code": 200,
+      "bytes": 22914,
+      "content_type": [
+        "application/json"
+      ]
+    },
+    {
+      "name": "bounty-27-page.html",
+      "url": "https://gofrantic.com/bounties/p-f400e96ef5",
+      "status_code": 200,
+      "bytes": 54779,
+      "content_type": [
+        "text/html"
+      ]
+    },
+    {
+      "name": "bounty-33-api.json",
+      "url": "https://gofrantic.com/v1/bounties/p-8b91e1ac8c",
+      "status_code": 200,
+      "bytes": 15443,
+      "content_type": [
+        "application/json"
+      ]
+    },
+    {
+      "name": "bounty-33-page.html",
+      "url": "https://gofrantic.com/bounties/p-8b91e1ac8c",
+      "status_code": 200,
+      "bytes": 43383,
+      "content_type": [
+        "text/html"
+      ]
+    },
+    {
+      "name": "bounty-46-api.json",
+      "url": "https://gofrantic.com/v1/bounties/p-13c5574312",
+      "status_code": 200,
+      "bytes": 12668,
+      "content_type": [
+        "application/json"
+      ]
+    },
+    {
+      "name": "bounty-46-page.html",
+      "url": "https://gofrantic.com/bounties/p-13c5574312",
+      "status_code": 200,
+      "bytes": 37671,
+      "content_type": [
+        "text/html"
+      ]
+    },
+    {
+      "name": "bounty-60-api.json",
+      "url": "https://gofrantic.com/v1/bounties/p-c3a02987c2",
+      "status_code": 200,
+      "bytes": 23199,
+      "content_type": [
+        "application/json"
+      ]
+    },
+    {
+      "name": "bounty-60-page.html",
+      "url": "https://gofrantic.com/bounties/p-c3a02987c2",
+      "status_code": 200,
+      "bytes": 53575,
+      "content_type": [
+        "text/html"
+      ]
+    },
+    {
+      "name": "bounty-61-api.json",
+      "url": "https://gofrantic.com/v1/bounties/p-b141001db0",
+      "status_code": 200,
+      "bytes": 25349,
+      "content_type": [
+        "application/json"
+      ]
+    },
+    {
+      "name": "bounty-61-page.html",
+      "url": "https://gofrantic.com/bounties/p-b141001db0",
+      "status_code": 200,
+      "bytes": 56687,
+      "content_type": [
+        "text/html"
+      ]
+    },
+    {
+      "name": "bounty-62-api.json",
+      "url": "https://gofrantic.com/v1/bounties/p-a7db78d8a8",
+      "status_code": 200,
+      "bytes": 22204,
+      "content_type": [
+        "application/json"
+      ]
+    },
+    {
+      "name": "bounty-62-page.html",
+      "url": "https://gofrantic.com/bounties/p-a7db78d8a8",
+      "status_code": 200,
+      "bytes": 51424,
+      "content_type": [
+        "text/html"
+      ]
+    },
+    {
+      "name": "bounty-63-api.json",
+      "url": "https://gofrantic.com/v1/bounties/p-3a51d99b39",
+      "status_code": 200,
+      "bytes": 22057,
+      "content_type": [
+        "application/json"
+      ]
+    },
+    {
+      "name": "bounty-63-page.html",
+      "url": "https://gofrantic.com/bounties/p-3a51d99b39",
+      "status_code": 200,
+      "bytes": 50976,
+      "content_type": [
+        "text/html"
+      ]
+    },
+    {
+      "name": "bounty-64-api.json",
+      "url": "https://gofrantic.com/v1/bounties/p-cf2486fad0",
+      "status_code": 200,
+      "bytes": 21759,
+      "content_type": [
+        "application/json"
+      ]
+    },
+    {
+      "name": "bounty-64-page.html",
+      "url": "https://gofrantic.com/bounties/p-cf2486fad0",
+      "status_code": 200,
+      "bytes": 50142,
+      "content_type": [
+        "text/html"
+      ]
+    },
+    {
+      "name": "bounty-65-api.json",
+      "url": "https://gofrantic.com/v1/bounties/p-6b470ea66c",
+      "status_code": 200,
+      "bytes": 21686,
+      "content_type": [
+        "application/json"
+      ]
+    },
+    {
+      "name": "bounty-65-page.html",
+      "url": "https://gofrantic.com/bounties/p-6b470ea66c",
+      "status_code": 200,
+      "bytes": 50039,
+      "content_type": [
+        "text/html"
+      ]
+    },
+    {
+      "name": "bounty-66-api.json",
+      "url": "https://gofrantic.com/v1/bounties/p-98da30af97",
+      "status_code": 200,
+      "bytes": 21943,
+      "content_type": [
+        "application/json"
+      ]
+    },
+    {
+      "name": "bounty-66-page.html",
+      "url": "https://gofrantic.com/bounties/p-98da30af97",
+      "status_code": 200,
+      "bytes": 50592,
+      "content_type": [
+        "text/html"
+      ]
+    },
+    {
+      "name": "bounty-67-api.json",
+      "url": "https://gofrantic.com/v1/bounties/p-1d9b5abe1e",
+      "status_code": 200,
+      "bytes": 21199,
+      "content_type": [
+        "application/json"
+      ]
+    },
+    {
+      "name": "bounty-67-page.html",
+      "url": "https://gofrantic.com/bounties/p-1d9b5abe1e",
+      "status_code": 200,
+      "bytes": 49500,
+      "content_type": [
+        "text/html"
+      ]
+    },
+    {
+      "name": "bounty-68-api.json",
+      "url": "https://gofrantic.com/v1/bounties/p-c7bce878c8",
+      "status_code": 200,
+      "bytes": 23135,
+      "content_type": [
+        "application/json"
+      ]
+    },
+    {
+      "name": "bounty-68-page.html",
+      "url": "https://gofrantic.com/bounties/p-c7bce878c8",
+      "status_code": 200,
+      "bytes": 52259,
+      "content_type": [
+        "text/html"
+      ]
+    },
+    {
+      "name": "bounty-70-api.json",
+      "url": "https://gofrantic.com/v1/bounties/p-fe528476ff",
+      "status_code": 200,
+      "bytes": 22928,
+      "content_type": [
+        "application/json"
+      ]
+    },
+    {
+      "name": "bounty-70-page.html",
+      "url": "https://gofrantic.com/bounties/p-fe528476ff",
+      "status_code": 200,
+      "bytes": 42908,
+      "content_type": [
+        "text/html"
+      ]
+    },
+    {
+      "name": "bounty-71-api.json",
+      "url": "https://gofrantic.com/v1/bounties/p-4bc8c5bd4a",
+      "status_code": 200,
+      "bytes": 24213,
+      "content_type": [
+        "application/json"
+      ]
+    },
+    {
+      "name": "bounty-71-page.html",
+      "url": "https://gofrantic.com/bounties/p-4bc8c5bd4a",
+      "status_code": 200,
+      "bytes": 44015,
+      "content_type": [
+        "text/html"
+      ]
+    }
+  ],
+  "sampled_bounty_numbers": [
+    43,
+    27,
+    33,
+    46,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    70,
+    71
+  ]
+}
