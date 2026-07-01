@@ -1,7 +1,7 @@
 {
   "verdict": "pass",
   "checks": {
-    "runx_version_observed": "runx-cli 0.6.13",
+    "runx_version_observed": "runx-cli 0.6.14",
     "runx_minimum_required": "runx-cli 0.6.6",
     "sampled_bounty_pages_at_least_five": true,
     "observations_at_least_six": true,
@@ -14,7 +14,5 @@
       "confusing",
       "over-crowded"
     ]
-  },
-  "evidence_sha256": "sha256:bbf4eb201bf0f7e178abf72c6244d6e81cbd629a00304de78921de504fe15c6f",
-  "report_sha256": "sha256:6b859f03e6fdd037902b7962b40313c469818fc9b4d7cc61c224b6fbc4e6620e"
+  }
 }

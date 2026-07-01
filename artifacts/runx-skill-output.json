@@ -1,34 +1,82 @@
 {
   "closure": {
-    "closed_at": "2026-07-01T07:09:16.950Z",
-    "disposition": "failed",
-    "reason_code": "process_failed",
+    "closed_at": "2026-07-01T07:14:38.511Z",
+    "disposition": "closed",
+    "reason_code": "process_closed",
     "summary": "cli-tool default completed"
   },
   "execution": {
-    "exit_code": null,
-    "skill_claim": "",
-    "stderr": "terminate called after throwing an instance of 'St9bad_alloc'\n  what():  std::bad_alloc\n",
-    "stdout": "",
-    "structured_output": ""
+    "exit_code": 0,
+    "skill_claim": {
+      "counts": {
+        "accepted": 1,
+        "api_board_bounties_open_field": 15,
+        "claimed": 3,
+        "completed_total": 54,
+        "delivered": 4,
+        "open": 15,
+        "paid": 46,
+        "total": 69
+      },
+      "evidence_path": "/home/runner/work/frantic-bounty-43-board-health-audit-8064a151/frantic-bounty-43-board-health-audit-8064a151/artifacts/evidence.json",
+      "observations_count": 12,
+      "questionable_count": 7,
+      "report_path": "/home/runner/work/frantic-bounty-43-board-health-audit-8064a151/frantic-bounty-43-board-health-audit-8064a151/artifacts/report.md",
+      "verdict": "pass"
+    },
+    "stderr": "",
+    "stdout": "{\n  \"verdict\": \"pass\",\n  \"report_path\": \"/home/runner/work/frantic-bounty-43-board-health-audit-8064a151/frantic-bounty-43-board-health-audit-8064a151/artifacts/report.md\",\n  \"evidence_path\": \"/home/runner/work/frantic-bounty-43-board-health-audit-8064a151/frantic-bounty-43-board-health-audit-8064a151/artifacts/evidence.json\",\n  \"observations_count\": 12,\n  \"questionable_count\": 7,\n  \"counts\": {\n    \"open\": 15,\n    \"delivered\": 4,\n    \"accepted\": 1,\n    \"paid\": 46,\n    \"claimed\": 3,\n    \"total\": 69,\n    \"completed_total\": 54,\n    \"api_board_bounties_open_field\": 15\n  }\n}\n",
+    "structured_output": {
+      "counts": {
+        "accepted": 1,
+        "api_board_bounties_open_field": 15,
+        "claimed": 3,
+        "completed_total": 54,
+        "delivered": 4,
+        "open": 15,
+        "paid": 46,
+        "total": 69
+      },
+      "evidence_path": "/home/runner/work/frantic-bounty-43-board-health-audit-8064a151/frantic-bounty-43-board-health-audit-8064a151/artifacts/evidence.json",
+      "observations_count": 12,
+      "questionable_count": 7,
+      "report_path": "/home/runner/work/frantic-bounty-43-board-health-audit-8064a151/frantic-bounty-43-board-health-audit-8064a151/artifacts/report.md",
+      "verdict": "pass"
+    }
   },
-  "payload": "",
+  "payload": {
+    "counts": {
+      "accepted": 1,
+      "api_board_bounties_open_field": 15,
+      "claimed": 3,
+      "completed_total": 54,
+      "delivered": 4,
+      "open": 15,
+      "paid": 46,
+      "total": 69
+    },
+    "evidence_path": "/home/runner/work/frantic-bounty-43-board-health-audit-8064a151/frantic-bounty-43-board-health-audit-8064a151/artifacts/evidence.json",
+    "observations_count": 12,
+    "questionable_count": 7,
+    "report_path": "/home/runner/work/frantic-bounty-43-board-health-audit-8064a151/frantic-bounty-43-board-health-audit-8064a151/artifacts/report.md",
+    "verdict": "pass"
+  },
   "receipt": {
     "acts": [
       {
         "artifact_refs": [],
         "closure": {
-          "closed_at": "2026-07-01T07:09:16.950Z",
-          "disposition": "failed",
+          "closed_at": "2026-07-01T07:14:38.511Z",
+          "disposition": "closed",
           "reason_code": "process_exit",
-          "summary": "terminate called after throwing an instance of 'St9bad_alloc'\n  what():  std::bad_alloc\n"
+          "summary": "cli-tool exited successfully"
         },
         "criterion_bindings": [
           {
             "criterion_id": "process_exit",
             "evidence_refs": [],
-            "status": "failed",
-            "summary": "terminate called after throwing an instance of 'St9bad_alloc'\n  what():  std::bad_alloc\n",
+            "status": "verified",
+            "summary": "cli-tool exited successfully",
             "verification_refs": []
           }
         ],
@@ -73,7 +121,7 @@
       "terms": []
     },
     "canonicalization": "runx.receipt.c14n.v1",
-    "created_at": "2026-07-01T07:09:16.950Z",
+    "created_at": "2026-07-01T07:14:38.511Z",
     "decisions": [
       {
         "artifact_refs": [],
@@ -101,8 +149,8 @@
         "selected_harness_ref": null
       }
     ],
-    "digest": "sha256:ac0f68ee660ac544da17be6b8fc20ef7d1f75fec1f32670ac3db2df73281c25b",
-    "id": "sha256:304f3a9f5c83d8afcb62ce0f9e6f53a3ede5f7881d1b45adbe546d421ff8b32a",
+    "digest": "sha256:5d88e16fa87551f651aba4d21d4aaeceb79f22c0c51335e7c460904f7a51ce68",
+    "id": "sha256:86a0748101e9729ea405a8677139866bb0f65721c20c1f164058a1be161e49c5",
     "idempotency": {
       "content_hash": "sha256:run_default_a5c0b102f73c-default-content",
       "intent_key": "sha256:run_default_a5c0b102f73c-default-intent",
@@ -119,25 +167,25 @@
     },
     "schema": "runx.receipt.v1",
     "seal": {
-      "closed_at": "2026-07-01T07:09:16.950Z",
+      "closed_at": "2026-07-01T07:14:38.511Z",
       "criteria": [
         {
           "criterion_id": "process_exit",
           "evidence_refs": [],
-          "status": "failed",
-          "summary": "terminate called after throwing an instance of 'St9bad_alloc'\n  what():  std::bad_alloc\n",
+          "status": "verified",
+          "summary": "cli-tool exited successfully",
           "verification_refs": []
         }
       ],
-      "disposition": "failed",
-      "last_observed_at": "2026-07-01T07:09:16.950Z",
-      "reason_code": "process_failed",
+      "disposition": "closed",
+      "last_observed_at": "2026-07-01T07:14:38.511Z",
+      "reason_code": "process_closed",
       "summary": "cli-tool default completed"
     },
     "signals": [],
     "signature": {
       "alg": "Ed25519",
-      "value": "base64:PNOShsSM4HXghqTWgvFITU53rw9a96c79z0ocXmwe2VFOCtiAuhaT3VJY-gQhMvgUGbxq_h7TACNDZc-Y5vwBw"
+      "value": "base64:w60ct2MX2bqVvifqZn3aS2YPh0W7HyhKNMzMcg1ub6FRJydEVNoloRTY6-62AyptAmy2AZ5Eyyi5ab_Opr7kBQ"
     },
     "subject": {
       "commitments": [],
@@ -148,7 +196,7 @@
       }
     }
   },
-  "receipt_id": "sha256:304f3a9f5c83d8afcb62ce0f9e6f53a3ede5f7881d1b45adbe546d421ff8b32a",
+  "receipt_id": "sha256:86a0748101e9729ea405a8677139866bb0f65721c20c1f164058a1be161e49c5",
   "run_id": "run_default_a5c0b102f73c",
   "schema": "runx.skill_run.v1",
   "skill_name": "frantic-board-health-audit",

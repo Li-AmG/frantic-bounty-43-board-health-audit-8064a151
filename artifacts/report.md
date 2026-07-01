@@ -7,16 +7,15 @@ Captured at: `2026-07-01T06:43:33.1913688Z` from public URLs only.
 - Source: `https://gofrantic.com/v1/board` saved as `captures/board.json`.
 - Total bounties in `board.bounties`: **69**.
 - Open: **15**; delivered: **4**; accepted: **1**; paid: **46**; claimed/in flight: **3**.
-- The top-level `board.bounties_open` field is **15**, matching the 15 rows in `board.open_bounties`.
 - Coverage: public board HTML, public status page, feed JSON, ledger JSON, public board API, and **15** bounty API/page pairs.
 
 ## Inventory Checks
 
-- Stale: **5** open rows are at least 7 days old in the capture. Oldest examples are #27, #33, #46, #49, and #60.
-- Superseded: **one rewrite needed**. #46 depends on the prior Sourcey proof (#45 paid) but does not name the excluded ecosystem on the visible listing.
-- Duplicated: **clean for exact duplicate titles**. No exact duplicate open bounty titles were found in `board.open_bounties`.
-- Confusing: **one visible issue**. #49 shows 84 claim slots for a goodwill row, which makes the open board look much larger than the paid queue.
-- Over-crowded: **12 of 15** open rows are `runx skill:` bounties, and the sampled skill bounties share the same large artifact checklist.
+- Stale: **5** open rows are at least 7 days old in the capture.
+- Superseded: **one rewrite needed**. #46 depends on the prior Sourcey proof (#45 paid) but does not name the excluded ecosystem.
+- Duplicated: **clean for exact duplicate titles**. No exact duplicate open bounty titles were found.
+- Confusing: **one visible issue**. #49 shows 84 claim slots for a goodwill row.
+- Over-crowded: **12 of 15** open rows are `runx skill:` bounties with a repeated heavy artifact checklist.
 - API/page binding: **clean in sample**. The sampled posting ids match the captured API and page URLs.
 
 ## Operator Recommendations
@@ -24,7 +23,7 @@ Captured at: `2026-07-01T06:43:33.1913688Z` from public URLs only.
 - **REWRITE #27 `p-f400e96ef5` - runx skill: meeting prep from bounded context**
   URL: https://gofrantic.com/bounties/p-f400e96ef5
   Category: stale.
-  Evidence: It is the oldest visible open paid bounty in the capture, posted 2026-06-20T12:22:10.909Z and still open 11.4 days later. It also asks for a public PR, registry publish, raw files, evidence_json, verification_json, receipt_ref, and report for only $10, which likely explains why it remains open.
+  Evidence: It is the oldest visible open paid bounty in the capture, posted 2026-06-20T12:22:10.909Z and still open more than 11 days later. It also asks for a public PR, registry publish, raw files, evidence_json, verification_json, receipt_ref, and report for only $10, which likely explains why it remains open.
   Next action: Keep the objective but rewrite the scope into one of: registry publish only, upstream PR only, or dogfood-only validation. Raise price or close if the all-in package is still required.
 - **REWRITE #33 `p-8b91e1ac8c` - Publish Sourcey docs for a maintained OSS library**
   URL: https://gofrantic.com/bounties/p-8b91e1ac8c
@@ -44,7 +43,7 @@ Captured at: `2026-07-01T06:43:33.1913688Z` from public URLs only.
 - **REWRITE #61 `p-b141001db0` - runx skill: CI failure triage and classification**
   URL: https://gofrantic.com/bounties/p-b141001db0
   Category: over-crowded.
-  Evidence: It is one of a dense cluster of open runx skill packaging bounties (#60-#68, #72-#73) that all demand the same artifact set: public_url, source_url, pr_url, x_yaml, skill_md, evidence_json, verification_json, receipt_ref, and report. This cluster makes the board feel repetitive even though the domains differ.
+  Evidence: It is one of a dense cluster of open runx skill packaging bounties (#60-#68, #72-#73) that all demand the same artifact set: public_url, source_url, pr_url, x_yaml, skill_md, evidence_json, verification_json, receipt_ref, and report.
   Next action: Keep the CI triage topic but rewrite the listing title or summary with the unique failure-taxonomy value and group the shared packaging checklist behind a template link.
 - **REWRITE #62 `p-a7db78d8a8` - runx skill: spam risk reviewer**
   URL: https://gofrantic.com/bounties/p-a7db78d8a8
@@ -59,12 +58,12 @@ Captured at: `2026-07-01T06:43:33.1913688Z` from public URLs only.
 
 ## Clean Evidence
 
-- duplicated: clean for exact duplicates. No exact duplicate open titles in board.open_bounties; duplicate_titles_count=0.
-- api/page URL binding: clean in sample. All 15 sampled bounty API records returned postingId values matching their captured page/API URLs; this directly addresses prior #43 rejection risk.
-- public read model: clean. The public /v1/board response includes board.bounties, board.open_bounties, board.completed_bounties, and feed; no private dashboard data was needed.
+- duplicated: clean for exact duplicates. No exact duplicate open titles in board.open_bounties.
+- api/page URL binding: clean in sample. All sampled posting ids match their page/API URLs.
+- public read model: clean. Counts and rows came from public responses only.
 
 ## Why This Matters
 
-- Workers can still find real work, but the first screen now mixes old paid work, goodwill capacity, and a large set of similar runx skill package bounties.
+- Workers can still find real work, but the first screen mixes old paid work, goodwill capacity, and a large set of similar runx skill package bounties.
 - Curation should prioritize rewriting old, high-friction listings and grouping repeated runx packaging requirements so each bounty's unique value is visible.
-- The board/API read model itself is healthy enough for workers to audit: counts, URLs, statuses, and events are publicly inspectable without private access.
+- The board/API read model itself is healthy enough for workers to audit without private access.

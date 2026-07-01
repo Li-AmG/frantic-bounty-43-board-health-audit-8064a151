@@ -2,14 +2,14 @@
   "schema": "frantic.board_health_audit.v1",
   "bounty": 43,
   "claim_id": "8064a151-e87d-46b2-b0ad-3b9160fe4bd1",
-  "generated_at_utc": "2026-07-01T07:00:58.0404909Z",
+  "generated_at_utc": "2026-07-01T07:14:38.504Z",
   "summary": "Captured the public Frantic board, public API read model, feed/ledger JSON, homepage/status HTML, and 15 bounty API/page pairs. The board is live and internally readable, but operator curation should address stale older listings, a Sourcey supersession dependency, one confusing goodwill slot count, and an over-crowded cluster of runx skill package bounties.",
   "observations": [
     {
       "id": "runx_version",
       "type": "command_output",
-      "command": "F:\\622gp\\07-frantic-bounty-bot\\tools\\runx-cli\\node_modules\\@runxhq\\cli-win32-x64\\bin\\runx.exe --version",
-      "output": "runx-cli 0.6.13",
+      "command": "runx --version",
+      "output": "runx-cli 0.6.14",
       "meets_minimum": true,
       "minimum_required": "runx-cli 0.6.6"
     },
@@ -24,245 +24,245 @@
           "url": "https://gofrantic.com/v1/board",
           "status_code": 200,
           "bytes": 310202,
-          "sha256": "sha256:e3e5632951375ec3f891f2025c49bfb7302c3c28e74f45986317b046a6c7d227"
+          "sha256": "sha256:92a28436975bc8869085cb2139ce4628150bad074904bba399c172300eece1e6"
         },
         {
           "name": "feed.json",
           "url": "https://gofrantic.com/feed.json",
           "status_code": 200,
           "bytes": 42721,
-          "sha256": "sha256:cab7ed175dc4fa8f939dff645d207558f10f0a4b73f0f289db87d71d9b292d15"
+          "sha256": "sha256:699b95202771b73ccd8d2111fe91f737c475625de059ef1aeae6ddc745c10968"
         },
         {
           "name": "ledger.json",
           "url": "https://gofrantic.com/ledger.json",
           "status_code": 200,
           "bytes": 112894,
-          "sha256": "sha256:1e3497e3df146a4dbe7393e6eba0b64a69d16502ba068da25b29aa770dc3ddce"
+          "sha256": "sha256:4d4052292e1df8d976d30e2e30d7aa435fd10ba9e77b2662966ee9a20bec9e4c"
         },
         {
           "name": "home.html",
           "url": "https://gofrantic.com/",
           "status_code": 200,
           "bytes": 48641,
-          "sha256": "sha256:96ccd3cecb24029bf7f69c04dc14f488ec462a3121d8f64bcecf3b13248d0257"
+          "sha256": "sha256:4e1f02f80bff502a35ef6f6891d91e991cb70a77cd3bba15dcee91a69adf1535"
         },
         {
           "name": "status.html",
           "url": "https://gofrantic.com/status",
           "status_code": 200,
           "bytes": 12178,
-          "sha256": "sha256:7c0a2873e39e35212a1689ad820a0cd27de5da9dfd25911a4134465524ee18f9"
+          "sha256": "sha256:c7a831d9e66acea75ccb435bf2f4027cb38c63280cd0d26c5b0351f69f11cc7f"
         },
         {
           "name": "bounty-43-api.json",
           "url": "https://gofrantic.com/v1/bounties/p-aa9de6d1a9",
           "status_code": 200,
           "bytes": 13386,
-          "sha256": "sha256:1c2e018cb32d42d79538a43482b765115c19910ba3b95e8e02d141d67f37f2ee"
+          "sha256": "sha256:a82962546f990be5500149b7f087c19f552d24b82457987a9039fc9da0d43c98"
         },
         {
           "name": "bounty-43-page.html",
           "url": "https://gofrantic.com/bounties/p-aa9de6d1a9",
           "status_code": 200,
           "bytes": 37182,
-          "sha256": "sha256:01e86793fbc3ad4eb70a2b9e4ea1c8866b8734f03b34c01855526b17fe4f1367"
+          "sha256": "sha256:402f7cb593f1319e7f53f7e493af9cec229f85ac4cdfbd153074bb3239a12c0c"
         },
         {
           "name": "bounty-27-api.json",
           "url": "https://gofrantic.com/v1/bounties/p-f400e96ef5",
           "status_code": 200,
           "bytes": 22914,
-          "sha256": "sha256:3d8890c7b14300c5ae3a76a9979ffa082b9e3ad21c90ddff1fae08caa356409b"
+          "sha256": "sha256:8a28b276f7c2113538476e1b0164e04f5c0f1b510be5a5652c10479aea4b8d3a"
         },
         {
           "name": "bounty-27-page.html",
           "url": "https://gofrantic.com/bounties/p-f400e96ef5",
           "status_code": 200,
           "bytes": 54779,
-          "sha256": "sha256:97336dc3d56a20d83e3751dbac54203222dc109e05f4de7f38f51e86217ad445"
+          "sha256": "sha256:4a9186e5d91618ef3c7f7442ce3cc634c3f5f81b3bf070ff9fc31dd1391a9cfc"
         },
         {
           "name": "bounty-33-api.json",
           "url": "https://gofrantic.com/v1/bounties/p-8b91e1ac8c",
           "status_code": 200,
           "bytes": 15443,
-          "sha256": "sha256:19eeaf3345550bad90870450d28427b739375b5d9c40e02375104386a74949eb"
+          "sha256": "sha256:3905668e58182ec9c5e7c9349d4ce1d1abcd2f5854e13c70cbe88c022da624ae"
         },
         {
           "name": "bounty-33-page.html",
           "url": "https://gofrantic.com/bounties/p-8b91e1ac8c",
           "status_code": 200,
           "bytes": 43383,
-          "sha256": "sha256:551ee9e9e2fce0aefaf3ca8603a2a160e08f4051c2bedf653718f1c6d7e61d92"
+          "sha256": "sha256:1a50303e4dcc06c6d86a97635ffc1a9b63976d494e4fdd707a488b7a8c41dfdd"
         },
         {
           "name": "bounty-46-api.json",
           "url": "https://gofrantic.com/v1/bounties/p-13c5574312",
           "status_code": 200,
           "bytes": 12668,
-          "sha256": "sha256:8b85e1e9b816c48980ab095caefb62401f900bc3779a5b90db87ac82d690ef5f"
+          "sha256": "sha256:af7e7685288acdd46fa982685cd65ffa4dc09f78b77e790ab719b0dbd8594e2b"
         },
         {
           "name": "bounty-46-page.html",
           "url": "https://gofrantic.com/bounties/p-13c5574312",
           "status_code": 200,
           "bytes": 37671,
-          "sha256": "sha256:c70641547d42b8e79c20c9ff378601e481f9936a94f35de6c762a5a4d9e4676c"
+          "sha256": "sha256:9e0c77cfec0acd13426eb46ddfd0b11c1a3b8f2e8c082ce9fce2051ab69c562b"
         },
         {
           "name": "bounty-60-api.json",
           "url": "https://gofrantic.com/v1/bounties/p-c3a02987c2",
           "status_code": 200,
           "bytes": 23199,
-          "sha256": "sha256:353bf942b2535654be35642d222f59ad522dc73f18f5d09b25c3099e9e7e4c6e"
+          "sha256": "sha256:0a8f5e5e547509d83954a1245b0910b4a60f1c3b4cd62fac9deea0ebf11e4fa4"
         },
         {
           "name": "bounty-60-page.html",
           "url": "https://gofrantic.com/bounties/p-c3a02987c2",
           "status_code": 200,
           "bytes": 53575,
-          "sha256": "sha256:0d3b62731691bc189d5622b52d0955cd53044ebbf59919cf665cb3219df95cb0"
+          "sha256": "sha256:3ec868ba6d5e032e4e472469add002e78a6defbe19c838a4250448f3513050da"
         },
         {
           "name": "bounty-61-api.json",
           "url": "https://gofrantic.com/v1/bounties/p-b141001db0",
           "status_code": 200,
           "bytes": 25349,
-          "sha256": "sha256:610755792c3aa30f8d73a43100999e304fbd22496aa36c7423311f02877feb6a"
+          "sha256": "sha256:c204592456bb5755c18f724156a1bca9bd7fec6d1674919a915bbc8d61dc2fc9"
         },
         {
           "name": "bounty-61-page.html",
           "url": "https://gofrantic.com/bounties/p-b141001db0",
           "status_code": 200,
           "bytes": 56687,
-          "sha256": "sha256:afcad50c96a011efcee50b3f4799a353ff89bb57e57bcfb3df2d6bea99606daa"
+          "sha256": "sha256:e61ad55ba42f9d69ab21a87529097edd74994e33e5d3b9aeeee0f02292b1a455"
         },
         {
           "name": "bounty-62-api.json",
           "url": "https://gofrantic.com/v1/bounties/p-a7db78d8a8",
           "status_code": 200,
           "bytes": 22204,
-          "sha256": "sha256:2b4ae3382ca66900021bb5b95eaa17a1b4d13fa1631a370e6839834db947864f"
+          "sha256": "sha256:7f9aa2b375bbf693b11c9d1a687c1e4443ae6aad0630f2ab27b1ef03ace0ef62"
         },
         {
           "name": "bounty-62-page.html",
           "url": "https://gofrantic.com/bounties/p-a7db78d8a8",
           "status_code": 200,
           "bytes": 51424,
-          "sha256": "sha256:cbfcb6b3acf2b1e56cfc1b1c983915dcdffa3eb61efe1472b39111b5a88dfbbc"
+          "sha256": "sha256:1e6f6f8628a06fa0bf05b139a25d8ef148f3233d9a169a11ea54c8925f90045a"
         },
         {
           "name": "bounty-63-api.json",
           "url": "https://gofrantic.com/v1/bounties/p-3a51d99b39",
           "status_code": 200,
           "bytes": 22057,
-          "sha256": "sha256:91d4fc50f72bb37ca4ddd042a3f1f59b30105827c85ef957a660f5132cffc75d"
+          "sha256": "sha256:f7331e09f9482565265a2011b41c4ff254951c8828191d5c8f8ed13a2f8251a4"
         },
         {
           "name": "bounty-63-page.html",
           "url": "https://gofrantic.com/bounties/p-3a51d99b39",
           "status_code": 200,
           "bytes": 50976,
-          "sha256": "sha256:fc08a0a82531c991b74947427226116197237f347308bba15b129aabb60cdd79"
+          "sha256": "sha256:a736c6d6208e15981d3b1fc412504cbbc517928b36134cec573e3dee4df00e43"
         },
         {
           "name": "bounty-64-api.json",
           "url": "https://gofrantic.com/v1/bounties/p-cf2486fad0",
           "status_code": 200,
           "bytes": 21759,
-          "sha256": "sha256:6ce72f70b787b131949fc59aca6938e8b753d413b3d48d67d41d37828d74962f"
+          "sha256": "sha256:1ac2da23f739655dad4dd7051fcea9d9fb52017a0bb57397472622f2d90b21f2"
         },
         {
           "name": "bounty-64-page.html",
           "url": "https://gofrantic.com/bounties/p-cf2486fad0",
           "status_code": 200,
           "bytes": 50142,
-          "sha256": "sha256:08e25ff608cd6fc1c49d603be57b2a2ae457b152e86c02abdc12e91b996a85c4"
+          "sha256": "sha256:5909f2d22d93514c8eeeda7c1f2a14330234e5586311a68613897df0195e4599"
         },
         {
           "name": "bounty-65-api.json",
           "url": "https://gofrantic.com/v1/bounties/p-6b470ea66c",
           "status_code": 200,
           "bytes": 21686,
-          "sha256": "sha256:ace3f83fa7787a0a0d7dd7b6dfccb69b40a1ef68ec700a2194eb542e08a85363"
+          "sha256": "sha256:74cf76932a999b3dc3fec1c7ee672e4cfb97cff9375935a850663da1d7a4ef21"
         },
         {
           "name": "bounty-65-page.html",
           "url": "https://gofrantic.com/bounties/p-6b470ea66c",
           "status_code": 200,
           "bytes": 50039,
-          "sha256": "sha256:3b71952edc20fd5e5c680c4c2fcad217a28aace084351de83589521d9e13081a"
+          "sha256": "sha256:61da0212739c8b6a6660cf7b49014eaeec1f79462e92f475439bffebb29258d0"
         },
         {
           "name": "bounty-66-api.json",
           "url": "https://gofrantic.com/v1/bounties/p-98da30af97",
           "status_code": 200,
           "bytes": 21943,
-          "sha256": "sha256:8b3a03e8a081b5cfd4a5f93bead0262b1969f0e0726da417d2ac5e89551bfe51"
+          "sha256": "sha256:ea6d9cce9587d962675720b44f5220794744478152a000f4a66ab5fcbb4ba6ce"
         },
         {
           "name": "bounty-66-page.html",
           "url": "https://gofrantic.com/bounties/p-98da30af97",
           "status_code": 200,
           "bytes": 50592,
-          "sha256": "sha256:71ec5f4f48a0e954e1f58fd047af411ad9d90e2e8afe87e3e54b3f359692c40b"
+          "sha256": "sha256:e3d487a1a88bb2747ef3ca8be959f65cfef27b4ec425bdbd23ffec6c428ef222"
         },
         {
           "name": "bounty-67-api.json",
           "url": "https://gofrantic.com/v1/bounties/p-1d9b5abe1e",
           "status_code": 200,
           "bytes": 21199,
-          "sha256": "sha256:dd96f4b69c51a2e83e44f4112f836ca1ecab63e453ea9a0917ca873019645d22"
+          "sha256": "sha256:6c0fd516b2f4f262b6eff17ac0e1a0b9292bbdc63bf81095d4331e74fc76639a"
         },
         {
           "name": "bounty-67-page.html",
           "url": "https://gofrantic.com/bounties/p-1d9b5abe1e",
           "status_code": 200,
           "bytes": 49500,
-          "sha256": "sha256:814ac56416ef6da635309e62cf732e45b999840c79a0774f99531c05f36c2bb6"
+          "sha256": "sha256:5851bd40025a08b2db8b78a808edc80fb3c3691a7630817823f93568431c24d1"
         },
         {
           "name": "bounty-68-api.json",
           "url": "https://gofrantic.com/v1/bounties/p-c7bce878c8",
           "status_code": 200,
           "bytes": 23135,
-          "sha256": "sha256:c4784314ed06ec8e51915dd10488e650fbe45ced9bedd963a091067027ac6494"
+          "sha256": "sha256:68ef602598c820913ab06da1f7aaa56c7cbe0754cd4567380267f8bbaac59b85"
         },
         {
           "name": "bounty-68-page.html",
           "url": "https://gofrantic.com/bounties/p-c7bce878c8",
           "status_code": 200,
           "bytes": 52259,
-          "sha256": "sha256:4be49d2045cf5c1ab47be6efe863fe2abdb1a1f04e988c3505f39a7b9c3d2b45"
+          "sha256": "sha256:2db24f958fa6340979ecc6ff82955e86bb15e630739026fd4545d6a442bb7b50"
         },
         {
           "name": "bounty-70-api.json",
           "url": "https://gofrantic.com/v1/bounties/p-fe528476ff",
           "status_code": 200,
           "bytes": 22928,
-          "sha256": "sha256:903c5a82048ca75c369576ff4d838e84f594bbb93e53ed222b15fb7f82271f46"
+          "sha256": "sha256:6a2779d22972bfc320a4b80d6abb885a0bb16fe8060c0cc32698309f8de91606"
         },
         {
           "name": "bounty-70-page.html",
           "url": "https://gofrantic.com/bounties/p-fe528476ff",
           "status_code": 200,
           "bytes": 42908,
-          "sha256": "sha256:bb02ffa1710d1045f819f053039dd06412ea526b59f3d8cc43fcd1b84e1ed85a"
+          "sha256": "sha256:1a90af185abf694d5ffe2606edd35128284e364747d1a64eba5ce19682e6dcb9"
         },
         {
           "name": "bounty-71-api.json",
           "url": "https://gofrantic.com/v1/bounties/p-4bc8c5bd4a",
           "status_code": 200,
           "bytes": 24213,
-          "sha256": "sha256:d60e2cd8b8215314e8cd2902e61d32d6a2cda4a709564f5abfae5041458b2705"
+          "sha256": "sha256:9173473d61a16bde383d33ca667a7a5fdde730a5035146d0ea12c76dd22a508e"
         },
         {
           "name": "bounty-71-page.html",
           "url": "https://gofrantic.com/bounties/p-4bc8c5bd4a",
           "status_code": 200,
           "bytes": 44015,
-          "sha256": "sha256:abaa0e7699a4ef093eb5fb44d7e34f8270e4b5772c1f32086b55a11f57ebb1d1"
+          "sha256": "sha256:c7667e5af9326ac907d4de0d598090fa82a19f5b4538243e0dbf55bd834062db"
         }
       ]
     },
@@ -281,10 +281,10 @@
         "api_board_bounties_open_field": 15
       },
       "status_counts_raw": {
-        "accepted": 1,
+        "open": 15,
         "claimed": 3,
         "delivered": 4,
-        "open": 15,
+        "accepted": 1,
         "paid": 46
       }
     },
@@ -339,7 +339,7 @@
           "number": 27,
           "posting_id": "p-f400e96ef5",
           "title": "runx skill: meeting prep from bounded context",
-          "age_days": 11.1,
+          "age_days": 10.8,
           "url": "https://gofrantic.com/bounties/p-f400e96ef5",
           "api_url": "https://gofrantic.com/v1/bounties/p-f400e96ef5"
         },
@@ -347,7 +347,7 @@
           "number": 33,
           "posting_id": "p-8b91e1ac8c",
           "title": "Publish Sourcey docs for a maintained OSS library",
-          "age_days": 11.1,
+          "age_days": 10.8,
           "url": "https://gofrantic.com/bounties/p-8b91e1ac8c",
           "api_url": "https://gofrantic.com/v1/bounties/p-8b91e1ac8c"
         },
@@ -355,7 +355,7 @@
           "number": 46,
           "posting_id": "p-13c5574312",
           "title": "Publish Sourcey docs for a second ecosystem",
-          "age_days": 10.5,
+          "age_days": 10.2,
           "url": "https://gofrantic.com/bounties/p-13c5574312",
           "api_url": "https://gofrantic.com/v1/bounties/p-13c5574312"
         },
@@ -363,7 +363,7 @@
           "number": 49,
           "posting_id": "p-0d641a030c",
           "title": "Give runx some love",
-          "age_days": 10.4,
+          "age_days": 10.1,
           "url": "https://gofrantic.com/bounties/p-0d641a030c",
           "api_url": "https://gofrantic.com/v1/bounties/p-0d641a030c"
         },
@@ -371,7 +371,7 @@
           "number": 60,
           "posting_id": "p-c3a02987c2",
           "title": "runx skill: dunning and AR reminder ladder",
-          "age_days": 8.5,
+          "age_days": 8.2,
           "url": "https://gofrantic.com/bounties/p-c3a02987c2",
           "api_url": "https://gofrantic.com/v1/bounties/p-c3a02987c2"
         }
@@ -398,10 +398,10 @@
           "number": 45,
           "title": "Audit Sourcey docs gaps on a real library",
           "url": "https://gofrantic.com/bounties/p-c2eb829cc3",
-          "settled_at": "06/25/2026 00:42:57"
+          "settled_at": "2026-06-25T00:42:57.337Z"
         }
       ],
-      "finding": "Sourcey #46 is not obsolete, but should name the already represented ecosystem because paid #45 is the dependency for its 'second ecosystem' constraint."
+      "finding": "Sourcey #46 is not obsolete, but should name the already represented ecosystem because paid #45 is the dependency for its second-ecosystem constraint."
     },
     {
       "id": "duplicate_inventory",
@@ -451,8 +451,8 @@
           "title": "runx skill: meeting prep from bounded context",
           "url": "https://gofrantic.com/bounties/p-f400e96ef5",
           "api_url": "https://gofrantic.com/v1/bounties/p-f400e96ef5",
-          "source": "board.open_bounties plus captured bounty-27-api.json/page.html",
-          "rationale": "It is the oldest visible open paid bounty in the capture, posted 2026-06-20T12:22:10.909Z and still open 11.4 days later. It also asks for a public PR, registry publish, raw files, evidence_json, verification_json, receipt_ref, and report for only $10, which likely explains why it remains open.",
+          "source": "captured public board plus bounty-27-api.json/page.html when sampled",
+          "rationale": "It is the oldest visible open paid bounty in the capture, posted 2026-06-20T12:22:10.909Z and still open more than 11 days later. It also asks for a public PR, registry publish, raw files, evidence_json, verification_json, receipt_ref, and report for only $10, which likely explains why it remains open.",
           "next_operator_action": "Keep the objective but rewrite the scope into one of: registry publish only, upstream PR only, or dogfood-only validation. Raise price or close if the all-in package is still required."
         },
         {
@@ -463,7 +463,7 @@
           "title": "Publish Sourcey docs for a maintained OSS library",
           "url": "https://gofrantic.com/bounties/p-8b91e1ac8c",
           "api_url": "https://gofrantic.com/v1/bounties/p-8b91e1ac8c",
-          "source": "board.open_bounties plus captured bounty-33-api.json/page.html",
+          "source": "captured public board plus bounty-33-api.json/page.html when sampled",
           "rationale": "It has been open since 2026-06-20T12:22:10.909Z. The acceptance requires a durable credible third-party docs home and at least 20 documented APIs for $20, while later Sourcey work (#45) is already paid and #46 is open as a second-ecosystem variant.",
           "next_operator_action": "Rewrite with a named target project or a short allowlist of acceptable durable homes; otherwise close until a credible host is prearranged."
         },
@@ -475,7 +475,7 @@
           "title": "Publish Sourcey docs for a second ecosystem",
           "url": "https://gofrantic.com/bounties/p-13c5574312",
           "api_url": "https://gofrantic.com/v1/bounties/p-13c5574312",
-          "source": "board.open_bounties and completed_bounties; paid #45 at /bounties/p-c2eb829cc3",
+          "source": "captured public board plus bounty-46-api.json/page.html when sampled",
           "rationale": "The bounty depends on knowing which ecosystem is already represented by a live or accepted Sourcey docs proof. The board shows #45 paid, but #46 does not name the excluded ecosystem in the listing, so workers must infer the hidden constraint before claiming.",
           "next_operator_action": "Rewrite the first paragraph to name the already-represented ecosystem and list allowed second ecosystems at claim time."
         },
@@ -487,7 +487,7 @@
           "title": "Give runx some love",
           "url": "https://gofrantic.com/bounties/p-0d641a030c",
           "api_url": "https://gofrantic.com/v1/bounties/p-0d641a030c",
-          "source": "board.open_bounties",
+          "source": "captured public board plus bounty-49-api.json/page.html when sampled",
           "rationale": "The public board lists this goodwill bounty with 84 available claim slots, far above every paid open bounty's single slot. It is valid inventory, but at board scale it makes the open count look more actionable than it is for paid work.",
           "next_operator_action": "Keep the bounty but visually separate goodwill/zero-dollar rows from paid rows, or cap the displayed open-slot count on the main board."
         },
@@ -499,8 +499,8 @@
           "title": "runx skill: CI failure triage and classification",
           "url": "https://gofrantic.com/bounties/p-b141001db0",
           "api_url": "https://gofrantic.com/v1/bounties/p-b141001db0",
-          "source": "board.open_bounties plus captured bounty-61-api.json/page.html",
-          "rationale": "It is one of a dense cluster of open runx skill packaging bounties (#60-#68, #72-#73) that all demand the same artifact set: public_url, source_url, pr_url, x_yaml, skill_md, evidence_json, verification_json, receipt_ref, and report. This cluster makes the board feel repetitive even though the domains differ.",
+          "source": "captured public board plus bounty-61-api.json/page.html when sampled",
+          "rationale": "It is one of a dense cluster of open runx skill packaging bounties (#60-#68, #72-#73) that all demand the same artifact set: public_url, source_url, pr_url, x_yaml, skill_md, evidence_json, verification_json, receipt_ref, and report.",
           "next_operator_action": "Keep the CI triage topic but rewrite the listing title or summary with the unique failure-taxonomy value and group the shared packaging checklist behind a template link."
         },
         {
@@ -511,7 +511,7 @@
           "title": "runx skill: spam risk reviewer",
           "url": "https://gofrantic.com/bounties/p-a7db78d8a8",
           "api_url": "https://gofrantic.com/v1/bounties/p-a7db78d8a8",
-          "source": "board.open_bounties plus captured bounty-62-api.json/page.html",
+          "source": "captured public board plus bounty-62-api.json/page.html when sampled",
           "rationale": "This is the lowest-price member of the same heavy artifact cluster at $6. Because the shared delivery packet is nearly identical to higher-priced skill bounties, workers may perceive it as underpriced rather than curated.",
           "next_operator_action": "Either raise the price to match the artifact workload or rewrite it as a smaller audit/report bounty without PR plus registry publication."
         },
@@ -523,7 +523,7 @@
           "title": "runx skill: list hygiene judge",
           "url": "https://gofrantic.com/bounties/p-c7bce878c8",
           "api_url": "https://gofrantic.com/v1/bounties/p-c7bce878c8",
-          "source": "board.open_bounties plus captured bounty-68-api.json/page.html",
+          "source": "captured public board plus bounty-68-api.json/page.html when sampled",
           "rationale": "This topic overlaps semantically with the current board-health audit and the visible list-curation concern. It is not a duplicate of #43, but on the board it reinforces the impression of multiple meta/list hygiene tasks at once.",
           "next_operator_action": "Keep if this skill is still needed, but add a one-line distinction from board curation and route it under the runx-skill cluster."
         }
@@ -541,12 +541,12 @@
         {
           "category": "api/page URL binding",
           "verdict": "clean in sample",
-          "evidence": "All 15 sampled bounty API records returned postingId values matching their captured page/API URLs; this directly addresses prior #43 rejection risk."
+          "evidence": "All 15 sampled bounty API records returned postingId values matching their captured page/API URLs."
         },
         {
           "category": "public read model",
           "verdict": "clean",
-          "evidence": "The public /v1/board response includes board.bounties, board.open_bounties, board.completed_bounties, and feed; no private dashboard data was needed."
+          "evidence": "The public /v1/board response includes board.bounties, board.open_bounties, board.completed_bounties, and feed."
         }
       ]
     },
@@ -611,8 +611,8 @@
       "posting_id": "p-f400e96ef5",
       "title": "runx skill: meeting prep from bounded context",
       "work_status": "open",
-      "price_usd": 10.0,
-      "posted_at": "06/20/2026 12:22:10",
+      "price_usd": 10,
+      "posted_at": "2026-06-20T12:22:10.909Z",
       "url": "https://gofrantic.com/bounties/p-f400e96ef5",
       "api_url": "https://gofrantic.com/v1/bounties/p-f400e96ef5",
       "required_artifacts": [
@@ -628,7 +628,6 @@
       ],
       "acceptance_count": 12,
       "description_length": 7041,
-      "typed_outputs": "agenda, decisions, risks, questions, follow_ups, and citations",
       "mentions_runx_cli": true,
       "mentions_public_pr": true,
       "claim_progress": {
@@ -649,8 +648,8 @@
       "posting_id": "p-8b91e1ac8c",
       "title": "Publish Sourcey docs for a maintained OSS library",
       "work_status": "open",
-      "price_usd": 20.0,
-      "posted_at": "06/20/2026 12:22:10",
+      "price_usd": 20,
+      "posted_at": "2026-06-20T12:22:10.909Z",
       "url": "https://gofrantic.com/bounties/p-8b91e1ac8c",
       "api_url": "https://gofrantic.com/v1/bounties/p-8b91e1ac8c",
       "required_artifacts": [
@@ -661,9 +660,8 @@
       ],
       "acceptance_count": 9,
       "description_length": 3791,
-      "typed_outputs": "",
       "mentions_runx_cli": true,
-      "mentions_public_pr": true,
+      "mentions_public_pr": false,
       "claim_progress": {
         "capacity": 1,
         "occupied": 0,
@@ -682,8 +680,8 @@
       "posting_id": "p-aa9de6d1a9",
       "title": "Audit the live Frantic board health",
       "work_status": "claimed",
-      "price_usd": 8.0,
-      "posted_at": "06/21/2026 01:50:56",
+      "price_usd": 8,
+      "posted_at": "2026-06-21T01:50:56.857Z",
       "url": "https://gofrantic.com/bounties/p-aa9de6d1a9",
       "api_url": "https://gofrantic.com/v1/bounties/p-aa9de6d1a9",
       "required_artifacts": [
@@ -694,7 +692,6 @@
       ],
       "acceptance_count": 7,
       "description_length": 2020,
-      "typed_outputs": "",
       "mentions_runx_cli": true,
       "mentions_public_pr": false,
       "claim_progress": {
@@ -715,8 +712,8 @@
       "posting_id": "p-13c5574312",
       "title": "Publish Sourcey docs for a second ecosystem",
       "work_status": "open",
-      "price_usd": 16.0,
-      "posted_at": "06/21/2026 01:50:56",
+      "price_usd": 16,
+      "posted_at": "2026-06-21T01:50:56.857Z",
       "url": "https://gofrantic.com/bounties/p-13c5574312",
       "api_url": "https://gofrantic.com/v1/bounties/p-13c5574312",
       "required_artifacts": [
@@ -727,7 +724,6 @@
       ],
       "acceptance_count": 8,
       "description_length": 2426,
-      "typed_outputs": "",
       "mentions_runx_cli": true,
       "mentions_public_pr": false,
       "claim_progress": {
@@ -748,8 +744,8 @@
       "posting_id": "p-c3a02987c2",
       "title": "runx skill: dunning and AR reminder ladder",
       "work_status": "open",
-      "price_usd": 11.0,
-      "posted_at": "06/23/2026 02:55:04",
+      "price_usd": 11,
+      "posted_at": "2026-06-23T02:55:04.475Z",
       "url": "https://gofrantic.com/bounties/p-c3a02987c2",
       "api_url": "https://gofrantic.com/v1/bounties/p-c3a02987c2",
       "required_artifacts": [
@@ -765,7 +761,6 @@
       ],
       "acceptance_count": 12,
       "description_length": 8079,
-      "typed_outputs": "",
       "mentions_runx_cli": true,
       "mentions_public_pr": true,
       "claim_progress": {
@@ -786,8 +781,8 @@
       "posting_id": "p-b141001db0",
       "title": "runx skill: CI failure triage and classification",
       "work_status": "open",
-      "price_usd": 8.0,
-      "posted_at": "06/25/2026 21:07:10",
+      "price_usd": 8,
+      "posted_at": "2026-06-25T21:07:10.792Z",
       "url": "https://gofrantic.com/bounties/p-b141001db0",
       "api_url": "https://gofrantic.com/v1/bounties/p-b141001db0",
       "required_artifacts": [
@@ -803,7 +798,6 @@
       ],
       "acceptance_count": 12,
       "description_length": 9794,
-      "typed_outputs": "",
       "mentions_runx_cli": true,
       "mentions_public_pr": true,
       "claim_progress": {
@@ -824,8 +818,8 @@
       "posting_id": "p-a7db78d8a8",
       "title": "runx skill: spam risk reviewer",
       "work_status": "open",
-      "price_usd": 6.0,
-      "posted_at": "06/25/2026 21:07:10",
+      "price_usd": 6,
+      "posted_at": "2026-06-25T21:07:10.792Z",
       "url": "https://gofrantic.com/bounties/p-a7db78d8a8",
       "api_url": "https://gofrantic.com/v1/bounties/p-a7db78d8a8",
       "required_artifacts": [
@@ -841,7 +835,6 @@
       ],
       "acceptance_count": 12,
       "description_length": 9791,
-      "typed_outputs": "",
       "mentions_runx_cli": true,
       "mentions_public_pr": true,
       "claim_progress": {
@@ -862,8 +855,8 @@
       "posting_id": "p-3a51d99b39",
       "title": "runx skill: renewal risk judge",
       "work_status": "open",
-      "price_usd": 7.0,
-      "posted_at": "06/25/2026 21:22:22",
+      "price_usd": 7,
+      "posted_at": "2026-06-25T21:22:22.037Z",
       "url": "https://gofrantic.com/bounties/p-3a51d99b39",
       "api_url": "https://gofrantic.com/v1/bounties/p-3a51d99b39",
       "required_artifacts": [
@@ -879,7 +872,6 @@
       ],
       "acceptance_count": 12,
       "description_length": 9570,
-      "typed_outputs": "",
       "mentions_runx_cli": true,
       "mentions_public_pr": true,
       "claim_progress": {
@@ -900,8 +892,8 @@
       "posting_id": "p-cf2486fad0",
       "title": "runx skill: oncall alert triage",
       "work_status": "open",
-      "price_usd": 8.0,
-      "posted_at": "06/25/2026 21:22:22",
+      "price_usd": 8,
+      "posted_at": "2026-06-25T21:22:22.037Z",
       "url": "https://gofrantic.com/bounties/p-cf2486fad0",
       "api_url": "https://gofrantic.com/v1/bounties/p-cf2486fad0",
       "required_artifacts": [
@@ -917,7 +909,6 @@
       ],
       "acceptance_count": 12,
       "description_length": 9894,
-      "typed_outputs": "",
       "mentions_runx_cli": true,
       "mentions_public_pr": true,
       "claim_progress": {
@@ -938,8 +929,8 @@
       "posting_id": "p-6b470ea66c",
       "title": "runx skill: deliverability judge",
       "work_status": "open",
-      "price_usd": 7.0,
-      "posted_at": "06/25/2026 21:22:22",
+      "price_usd": 7,
+      "posted_at": "2026-06-25T21:22:22.037Z",
       "url": "https://gofrantic.com/bounties/p-6b470ea66c",
       "api_url": "https://gofrantic.com/v1/bounties/p-6b470ea66c",
       "required_artifacts": [
@@ -955,7 +946,6 @@
       ],
       "acceptance_count": 12,
       "description_length": 9874,
-      "typed_outputs": "",
       "mentions_runx_cli": true,
       "mentions_public_pr": true,
       "claim_progress": {
@@ -976,8 +966,8 @@
       "posting_id": "p-98da30af97",
       "title": "runx skill: flaky test judge",
       "work_status": "open",
-      "price_usd": 7.0,
-      "posted_at": "06/25/2026 21:22:22",
+      "price_usd": 7,
+      "posted_at": "2026-06-25T21:22:22.037Z",
       "url": "https://gofrantic.com/bounties/p-98da30af97",
       "api_url": "https://gofrantic.com/v1/bounties/p-98da30af97",
       "required_artifacts": [
@@ -993,7 +983,6 @@
       ],
       "acceptance_count": 12,
       "description_length": 9936,
-      "typed_outputs": "",
       "mentions_runx_cli": true,
       "mentions_public_pr": true,
       "claim_progress": {
@@ -1014,8 +1003,8 @@
       "posting_id": "p-1d9b5abe1e",
       "title": "runx skill: agency charter validator",
       "work_status": "open",
-      "price_usd": 7.0,
-      "posted_at": "06/25/2026 21:22:22",
+      "price_usd": 7,
+      "posted_at": "2026-06-25T21:22:22.037Z",
       "url": "https://gofrantic.com/bounties/p-1d9b5abe1e",
       "api_url": "https://gofrantic.com/v1/bounties/p-1d9b5abe1e",
       "required_artifacts": [
@@ -1031,7 +1020,6 @@
       ],
       "acceptance_count": 12,
       "description_length": 9542,
-      "typed_outputs": "",
       "mentions_runx_cli": true,
       "mentions_public_pr": true,
       "claim_progress": {
@@ -1052,8 +1040,8 @@
       "posting_id": "p-c7bce878c8",
       "title": "runx skill: list hygiene judge",
       "work_status": "open",
-      "price_usd": 8.0,
-      "posted_at": "06/29/2026 03:49:53",
+      "price_usd": 8,
+      "posted_at": "2026-06-29T03:49:53.609Z",
       "url": "https://gofrantic.com/bounties/p-c7bce878c8",
       "api_url": "https://gofrantic.com/v1/bounties/p-c7bce878c8",
       "required_artifacts": [
@@ -1069,7 +1057,6 @@
       ],
       "acceptance_count": 12,
       "description_length": 8952,
-      "typed_outputs": "",
       "mentions_runx_cli": true,
       "mentions_public_pr": true,
       "claim_progress": {
@@ -1090,8 +1077,8 @@
       "posting_id": "p-fe528476ff",
       "title": "runx skill: reply router",
       "work_status": "claimed",
-      "price_usd": 9.0,
-      "posted_at": "06/29/2026 03:49:53",
+      "price_usd": 9,
+      "posted_at": "2026-06-29T03:49:53.609Z",
       "url": "https://gofrantic.com/bounties/p-fe528476ff",
       "api_url": "https://gofrantic.com/v1/bounties/p-fe528476ff",
       "required_artifacts": [
@@ -1107,7 +1094,6 @@
       ],
       "acceptance_count": 12,
       "description_length": 8479,
-      "typed_outputs": "",
       "mentions_runx_cli": true,
       "mentions_public_pr": true,
       "claim_progress": {
@@ -1128,8 +1114,8 @@
       "posting_id": "p-4bc8c5bd4a",
       "title": "runx skill: data subject request",
       "work_status": "claimed",
-      "price_usd": 12.0,
-      "posted_at": "06/29/2026 03:49:53",
+      "price_usd": 12,
+      "posted_at": "2026-06-29T03:49:53.609Z",
       "url": "https://gofrantic.com/bounties/p-4bc8c5bd4a",
       "api_url": "https://gofrantic.com/v1/bounties/p-4bc8c5bd4a",
       "required_artifacts": [
@@ -1145,7 +1131,6 @@
       ],
       "acceptance_count": 12,
       "description_length": 9238,
-      "typed_outputs": "",
       "mentions_runx_cli": true,
       "mentions_public_pr": true,
       "claim_progress": {
