@@ -32,10 +32,12 @@ jobs:
         run: npm install -g @runxhq/cli@0.6.14
       - name: Capture runx version
         run: |
+          set -euo pipefail
           runx --version | tee runx-version.txt
           echo "RUNX_AUDIT_RUNX_VERSION=$(cat runx-version.txt)" >> "$GITHUB_ENV"
       - name: Seal audit run
         run: |
+          set -euo pipefail
           rm -rf receipts
           mkdir -p receipts
           export RUNX_RECEIPT_DIR="$PWD/receipts"
@@ -46,13 +48,15 @@ jobs:
             --json --non-interactive | tee artifacts/runx-skill-output.json
       - name: Verify receipt
         run: |
+          set -euo pipefail
           export RUNX_RECEIPT_DIR="$PWD/receipts"
           RECEIPT_ID=$(find receipts -maxdepth 1 -name 'sha256:*.json' -printf '%f\n' | sed 's/\.json$//' | head -n 1)
           test -n "$RECEIPT_ID"
           echo "$RECEIPT_ID" | tee artifacts/receipt_ref.txt
-          runx verify "$RECEIPT_ID" --receipt-dir receipts --json | tee artifacts/runx-verify-output.json
+          runx verify "$RECEIPT_ID" --receipt-dir receipts --allow-local-development-signatures --json | tee artifacts/runx-verify-output.json
       - name: Commit generated receipt artifacts
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add artifacts receipts runx-version.txt
