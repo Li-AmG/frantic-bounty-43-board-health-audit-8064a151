@@ -1,0 +1,7 @@
+{
+  "status": "failure",
+  "error": {
+    "message": "runx verify requires trusted receipt verification keys. Set both RUNX_RECEIPT_VERIFY_KID and RUNX_RECEIPT_VERIFY_ED25519_PUBLIC_KEY_BASE64, or pass --allow-local-development-signatures for local fixture receipts only.",
+    "code": "runtime_error"
+  }
+}
