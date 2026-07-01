@@ -27,13 +27,9 @@ runners:
   default:
     default: true
     type: cli-tool
-    command: pwsh
+    command: node
     args:
-      - -NoProfile
-      - -ExecutionPolicy
-      - Bypass
-      - -File
-      - run.ps1
+      - run.mjs
     timeout_seconds: 60
     sandbox:
       profile: readonly
